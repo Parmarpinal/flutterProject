@@ -20,7 +20,7 @@ class front extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
-                    fontSize: MediaQuery.of(context).size.height*0.05,
+                    fontSize: MediaQuery.of(context).size.height * 0.05,
                     fontFamily: "Lucida Handwriting"),
               ),
               Text(
@@ -28,7 +28,7 @@ class front extends StatelessWidget {
                 style: TextStyle(
                     color: Colors.white,
                     fontWeight: FontWeight.w900,
-                    fontSize: MediaQuery.of(context).size.height*0.05,
+                    fontSize: MediaQuery.of(context).size.height * 0.05,
                     fontFamily: "Lucida Handwriting"),
               ),
               SizedBox(
@@ -39,7 +39,7 @@ class front extends StatelessWidget {
                   angle: 120,
                   child: Image.asset(
                     "images/icecream/icecreamcone.png",
-                    height: MediaQuery.of(context).size.height-330,
+                    height: MediaQuery.of(context).size.height - 330,
                     width: MediaQuery.of(context).size.width,
                   ),
                 ),
@@ -54,7 +54,9 @@ class front extends StatelessWidget {
                   children: [
                     Text(
                       "Explore",
-                      style: TextStyle(color: Colors.white, fontSize: MediaQuery.of(context).size.height*0.03),
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: MediaQuery.of(context).size.height * 0.03),
                     ),
                     SizedBox(
                       width: 20,

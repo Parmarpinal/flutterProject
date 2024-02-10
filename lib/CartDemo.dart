@@ -10,9 +10,9 @@ class ListItem {
 
   ListItem(
       {required this.img,
-        required this.name,
-        required this.desc,
-        required this.quantity});
+      required this.name,
+      required this.desc,
+      required this.quantity});
 }
 
 class Cart extends StatefulWidget {
@@ -143,7 +143,7 @@ class _CartState extends State<Cart> {
                                     decoration: BoxDecoration(
                                         color: Colors.pink.shade100,
                                         borderRadius:
-                                        BorderRadius.circular(15)),
+                                            BorderRadius.circular(15)),
                                     height: 70,
                                   ),
                                   Positioned(
@@ -189,21 +189,21 @@ class _CartState extends State<Cart> {
                                         decoration: BoxDecoration(
                                           color: Colors.pink.shade100,
                                           borderRadius:
-                                          BorderRadius.circular(7),
+                                              BorderRadius.circular(7),
                                         ),
                                         child: IconButton(
                                             padding: EdgeInsets.all(0),
                                             onPressed: () {
                                               setState(() {
                                                 items[index].isFavourite =
-                                                !items[index].isFavourite;
+                                                    !items[index].isFavourite;
                                               });
                                             },
                                             icon: (items[index].isFavourite ==
-                                                true)
+                                                    true)
                                                 ? Icon(Icons.favorite)
                                                 : Icon(Icons
-                                                .favorite_border_sharp),
+                                                    .favorite_border_sharp),
                                             iconSize: 15,
                                             color: Colors.pink),
                                       ),
@@ -213,7 +213,7 @@ class _CartState extends State<Cart> {
                                         decoration: BoxDecoration(
                                           color: Colors.pink.shade100,
                                           borderRadius:
-                                          BorderRadius.circular(7),
+                                              BorderRadius.circular(7),
                                         ),
                                         child: IconButton(
                                             padding: EdgeInsets.all(0),
@@ -270,7 +270,7 @@ class _CartState extends State<Cart> {
                                           decoration: BoxDecoration(
                                               color: Colors.pink.shade100,
                                               borderRadius:
-                                              BorderRadius.circular(6)),
+                                                  BorderRadius.circular(6)),
                                           child: Center(
                                             child: Text(
                                               "+",
@@ -301,7 +301,7 @@ class _CartState extends State<Cart> {
                                           decoration: BoxDecoration(
                                               color: Colors.pink.shade100,
                                               borderRadius:
-                                              BorderRadius.circular(6)),
+                                                  BorderRadius.circular(6)),
                                           child: Container(
                                             alignment: Alignment.center,
                                             child: Center(
@@ -372,9 +372,8 @@ class _CartState extends State<Cart> {
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: InkWell(
-              onTap: (){
-                Navigator.push(
-                    context,
+              onTap: () {
+                Navigator.push(context,
                     MaterialPageRoute(builder: (context) => homeNew()));
               },
               child: Container(

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import './CartDemo.dart';
 
 class pista extends StatefulWidget {
-
 //   String name;
 //   String path;
 //   int calory;
@@ -28,7 +27,7 @@ class pista extends StatefulWidget {
 class _pistaState extends State<pista> {
   int count = 0;
   String selectedSize = '';
-  int total=0;
+  int total = 0;
 
   // void updateSelectedSize(String newSize) {
   //   setState(() {
@@ -121,16 +120,16 @@ class _pistaState extends State<pista> {
                                       color: Colors.pink,
                                       fontWeight: FontWeight.w700,
                                       fontSize:
-                                      MediaQuery.of(context).size.height *
-                                          0.03,
+                                          MediaQuery.of(context).size.height *
+                                              0.03,
                                     )),
                                 Text("KCal",
                                     style: TextStyle(
                                         color: Colors.pink,
                                         fontWeight: FontWeight.w500,
                                         fontSize:
-                                        MediaQuery.of(context).size.height *
-                                            0.02)),
+                                            MediaQuery.of(context).size.height *
+                                                0.02)),
                               ],
                             ),
                             Text("Calories",
@@ -138,8 +137,8 @@ class _pistaState extends State<pista> {
                                     color: Colors.grey,
                                     fontWeight: FontWeight.w500,
                                     fontSize:
-                                    MediaQuery.of(context).size.height *
-                                        0.02)),
+                                        MediaQuery.of(context).size.height *
+                                            0.02)),
                           ],
                         ),
                         Wrap(
@@ -154,15 +153,15 @@ class _pistaState extends State<pista> {
                                         color: Colors.pink,
                                         fontWeight: FontWeight.w700,
                                         fontSize:
-                                        MediaQuery.of(context).size.height *
-                                            0.03)),
+                                            MediaQuery.of(context).size.height *
+                                                0.03)),
                                 Text("KL",
                                     style: TextStyle(
                                         color: Colors.pink,
                                         fontWeight: FontWeight.w500,
                                         fontSize:
-                                        MediaQuery.of(context).size.height *
-                                            0.02)),
+                                            MediaQuery.of(context).size.height *
+                                                0.02)),
                               ],
                             ),
                             Text("Energy",
@@ -170,8 +169,8 @@ class _pistaState extends State<pista> {
                                     color: Colors.grey,
                                     fontWeight: FontWeight.w500,
                                     fontSize:
-                                    MediaQuery.of(context).size.height *
-                                        0.02)),
+                                        MediaQuery.of(context).size.height *
+                                            0.02)),
                           ],
                         ),
                         Wrap(
@@ -186,15 +185,15 @@ class _pistaState extends State<pista> {
                                         color: Colors.pink,
                                         fontWeight: FontWeight.w700,
                                         fontSize:
-                                        MediaQuery.of(context).size.height *
-                                            0.03)),
+                                            MediaQuery.of(context).size.height *
+                                                0.03)),
                                 Text("%",
                                     style: TextStyle(
                                         color: Colors.pink,
                                         fontWeight: FontWeight.w500,
                                         fontSize:
-                                        MediaQuery.of(context).size.height *
-                                            0.02)),
+                                            MediaQuery.of(context).size.height *
+                                                0.02)),
                               ],
                             ),
                             Text("Calcium",
@@ -202,8 +201,8 @@ class _pistaState extends State<pista> {
                                     color: Colors.grey,
                                     fontWeight: FontWeight.w500,
                                     fontSize:
-                                    MediaQuery.of(context).size.height *
-                                        0.02)),
+                                        MediaQuery.of(context).size.height *
+                                            0.02)),
                           ],
                         ),
                         Wrap(
@@ -218,15 +217,15 @@ class _pistaState extends State<pista> {
                                         color: Colors.pink,
                                         fontWeight: FontWeight.w700,
                                         fontSize:
-                                        MediaQuery.of(context).size.height *
-                                            0.03)),
+                                            MediaQuery.of(context).size.height *
+                                                0.03)),
                                 Text("g",
                                     style: TextStyle(
                                         color: Colors.pink,
                                         fontWeight: FontWeight.w500,
                                         fontSize:
-                                        MediaQuery.of(context).size.height *
-                                            0.02)),
+                                            MediaQuery.of(context).size.height *
+                                                0.02)),
                               ],
                             ),
                             Text("Sugar",
@@ -234,8 +233,8 @@ class _pistaState extends State<pista> {
                                     color: Colors.grey,
                                     fontWeight: FontWeight.w500,
                                     fontSize:
-                                    MediaQuery.of(context).size.height *
-                                        0.02)),
+                                        MediaQuery.of(context).size.height *
+                                            0.02)),
                           ],
                         )
                       ],
@@ -271,14 +270,18 @@ class _pistaState extends State<pista> {
                               InkWell(
                                 onTap: () {
                                   setState(() {
-                                    selectedSize="S";
+                                    selectedSize = "S";
                                   });
                                 },
                                 child: Container(
-                                  width: MediaQuery.of(context).size.width*0.1,
-                                  height: MediaQuery.of(context).size.width*0.1,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.1,
+                                  height:
+                                      MediaQuery.of(context).size.width * 0.1,
                                   decoration: BoxDecoration(
-                                    color: (selectedSize=="S")?Colors.pink:Color(0xFFfa64ac),
+                                    color: (selectedSize == "S")
+                                        ? Colors.pink
+                                        : Color(0xFFfa64ac),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
                                   child: Center(
@@ -286,8 +289,9 @@ class _pistaState extends State<pista> {
                                       "S",
                                       style: TextStyle(
                                           color: Colors.white,
-                                          fontSize:
-                                          MediaQuery.of(context).size.height *
+                                          fontSize: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
                                               0.03,
                                           fontWeight: FontWeight.w600),
                                     ),
@@ -297,14 +301,18 @@ class _pistaState extends State<pista> {
                               InkWell(
                                 onTap: () {
                                   setState(() {
-                                    selectedSize="M";
+                                    selectedSize = "M";
                                   });
                                 },
                                 child: Container(
-                                  width: MediaQuery.of(context).size.width*0.1,
-                                  height: MediaQuery.of(context).size.width*0.1,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.1,
+                                  height:
+                                      MediaQuery.of(context).size.width * 0.1,
                                   decoration: BoxDecoration(
-                                    color: (selectedSize=="M")?Colors.pink:Color(0xFFfa64ac),
+                                    color: (selectedSize == "M")
+                                        ? Colors.pink
+                                        : Color(0xFFfa64ac),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
                                   child: Center(
@@ -312,8 +320,9 @@ class _pistaState extends State<pista> {
                                       "M",
                                       style: TextStyle(
                                           color: Colors.white,
-                                          fontSize:
-                                          MediaQuery.of(context).size.height *
+                                          fontSize: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
                                               0.03,
                                           fontWeight: FontWeight.w600),
                                     ),
@@ -323,14 +332,18 @@ class _pistaState extends State<pista> {
                               InkWell(
                                 onTap: () {
                                   setState(() {
-                                    selectedSize="L";
+                                    selectedSize = "L";
                                   });
                                 },
                                 child: Container(
-                                  width: MediaQuery.of(context).size.width*0.1,
-                                  height: MediaQuery.of(context).size.width*0.1,
+                                  width:
+                                      MediaQuery.of(context).size.width * 0.1,
+                                  height:
+                                      MediaQuery.of(context).size.width * 0.1,
                                   decoration: BoxDecoration(
-                                    color: (selectedSize=="L")?Colors.pink:Color(0xFFfa64ac),
+                                    color: (selectedSize == "L")
+                                        ? Colors.pink
+                                        : Color(0xFFfa64ac),
                                     borderRadius: BorderRadius.circular(20),
                                   ),
                                   child: Center(
@@ -338,8 +351,9 @@ class _pistaState extends State<pista> {
                                       "L",
                                       style: TextStyle(
                                           color: Colors.white,
-                                          fontSize:
-                                          MediaQuery.of(context).size.height *
+                                          fontSize: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
                                               0.03,
                                           fontWeight: FontWeight.w600),
                                     ),
@@ -427,19 +441,21 @@ class _pistaState extends State<pista> {
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontWeight: FontWeight.w500,
-                                    fontSize: MediaQuery.of(context).size.height *
-                                        0.03),
+                                    fontSize:
+                                        MediaQuery.of(context).size.height *
+                                            0.03),
                               ),
                               Container(
                                 padding: EdgeInsets.all(6),
                                 width: MediaQuery.of(context).size.width * 0.3,
-                                height: MediaQuery.of(context).size.height * 0.06,
+                                height:
+                                    MediaQuery.of(context).size.height * 0.06,
                                 decoration: BoxDecoration(
                                     color: Colors.white60,
                                     borderRadius: BorderRadius.circular(10)),
                                 child: Row(
                                   mainAxisAlignment:
-                                  MainAxisAlignment.spaceAround,
+                                      MainAxisAlignment.spaceAround,
                                   crossAxisAlignment: CrossAxisAlignment.center,
                                   children: [
                                     InkWell(
@@ -449,7 +465,7 @@ class _pistaState extends State<pista> {
                                           if (count <= 0) {
                                             count = 1;
                                           }
-                                          total=widget.data.price*count;
+                                          total = widget.data.price * count;
                                         });
                                       },
                                       child: Text(
@@ -457,8 +473,8 @@ class _pistaState extends State<pista> {
                                         style: TextStyle(
                                             color: Color(0xfff40d30),
                                             fontSize: MediaQuery.of(context)
-                                                .size
-                                                .height *
+                                                    .size
+                                                    .height *
                                                 0.03,
                                             fontWeight: FontWeight.w700),
                                       ),
@@ -467,8 +483,9 @@ class _pistaState extends State<pista> {
                                       count.toString(),
                                       style: TextStyle(
                                           color: Color(0xfff40d30),
-                                          fontSize:
-                                          MediaQuery.of(context).size.height *
+                                          fontSize: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
                                               0.03,
                                           fontWeight: FontWeight.w700),
                                     ),
@@ -478,15 +495,15 @@ class _pistaState extends State<pista> {
                                           style: TextStyle(
                                               color: Color(0xfff40d30),
                                               fontSize: MediaQuery.of(context)
-                                                  .size
-                                                  .height *
+                                                      .size
+                                                      .height *
                                                   0.03,
                                               fontWeight: FontWeight.w700),
                                         ),
                                         onTap: () {
                                           setState(() {
                                             count++;
-                                            total=widget.data.price*count;
+                                            total = widget.data.price * count;
                                           });
                                         }),
                                   ],
@@ -552,7 +569,7 @@ class _pistaState extends State<pista> {
                           style: TextStyle(
                               color: Colors.white,
                               fontSize:
-                              MediaQuery.of(context).size.height * 0.03,
+                                  MediaQuery.of(context).size.height * 0.03,
                               fontWeight: FontWeight.w400)),
                       Icon(Icons.arrow_right_alt_sharp,
                           color: Colors.white, size: 50),

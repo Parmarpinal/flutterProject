@@ -15,15 +15,15 @@ class ListItem {
 
   ListItem(
       {required this.path,
-        required this.name,
-        required this.price,
-        required this.bgcol,
-        required this.fontcol,
-        required this.star,
-        required this.calory,
-        required this.energy,
-        required this.calcium,
-        required this.sugar});
+      required this.name,
+      required this.price,
+      required this.bgcol,
+      required this.fontcol,
+      required this.star,
+      required this.calory,
+      required this.energy,
+      required this.calcium,
+      required this.sugar});
 }
 
 class ListBox {
@@ -123,7 +123,7 @@ class _homeState extends State<home> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius:
-                                  BorderRadius.all(Radius.circular(10)),
+                                      BorderRadius.all(Radius.circular(10)),
                                   color: Colors.white,
                                 ),
                                 child: IconButton(
@@ -144,7 +144,7 @@ class _homeState extends State<home> {
                               child: Container(
                                 decoration: BoxDecoration(
                                   borderRadius:
-                                  BorderRadius.all(Radius.circular(10)),
+                                      BorderRadius.all(Radius.circular(10)),
                                   color: Colors.white,
                                 ),
                                 child: IconButton(
@@ -269,8 +269,8 @@ class _homeState extends State<home> {
                                           ? Color(0xfff40d30)
                                           : Colors.grey,
                                       fontSize:
-                                      MediaQuery.of(context).size.height *
-                                          0.02,
+                                          MediaQuery.of(context).size.height *
+                                              0.02,
                                       fontWeight: FontWeight.w700),
                                 )
                               ],
@@ -330,23 +330,22 @@ class _homeState extends State<home> {
                               children: [
                                 Center(
                                     child: Container(
-                                      decoration: BoxDecoration(
-                                        color: items[index].bgcol,
-                                        borderRadius: BorderRadius.circular(10),
-                                      ),
-                                      width: MediaQuery.of(context).size.width - 50,
-                                      height: 60,
-                                    )),
+                                  decoration: BoxDecoration(
+                                    color: items[index].bgcol,
+                                    borderRadius: BorderRadius.circular(10),
+                                  ),
+                                  width: MediaQuery.of(context).size.width - 50,
+                                  height: 60,
+                                )),
                                 Container(
-                                  width:
-                                  MediaQuery.of(context).size.width - 35,
+                                  width: MediaQuery.of(context).size.width - 35,
                                   child: Padding(
                                     padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
                                     child: Row(
                                       mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                          MainAxisAlignment.spaceBetween,
                                       crossAxisAlignment:
-                                      CrossAxisAlignment.center,
+                                          CrossAxisAlignment.center,
                                       children: [
                                         Expanded(
                                           child: Column(
@@ -356,8 +355,10 @@ class _homeState extends State<home> {
                                                 child: Text(
                                                   items[index].name,
                                                   style: TextStyle(
-                                                      color: items[index].fontcol,
-                                                      fontWeight: FontWeight.w900,
+                                                      color:
+                                                          items[index].fontcol,
+                                                      fontWeight:
+                                                          FontWeight.w900,
                                                       fontSize: 20),
                                                 ),
                                               ),
@@ -373,7 +374,7 @@ class _homeState extends State<home> {
                                                           color: Colors
                                                               .grey.shade200,
                                                           fontWeight:
-                                                          FontWeight.w500,
+                                                              FontWeight.w500,
                                                           fontSize: 20),
                                                     ),
                                                   ),
@@ -415,9 +416,14 @@ class _homeState extends State<home> {
                                         //     fit: BoxFit.fill),
                                         CircleAvatar(
                                           // child: Image.asset(items[index].path),
-                                          backgroundImage: AssetImage(items[index].path),
-                                          backgroundColor: Colors.amber.shade100,
-                                          radius: MediaQuery.of(context).size.height*0.06,
+                                          backgroundImage:
+                                              AssetImage(items[index].path),
+                                          backgroundColor:
+                                              Colors.amber.shade100,
+                                          radius: MediaQuery.of(context)
+                                                  .size
+                                                  .height *
+                                              0.06,
                                         )
                                       ],
                                     ),

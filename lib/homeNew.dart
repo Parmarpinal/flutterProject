@@ -9,9 +9,9 @@ class ListItem {
 
   ListItem(
       {required this.img,
-        required this.name,
-        required this.desc,
-        required this.price});
+      required this.name,
+      required this.desc,
+      required this.price});
 }
 
 class ListBox {
@@ -75,121 +75,122 @@ class _homeNewState extends State<homeNew> {
         children: [
           Expanded(
               child: Container(
-                decoration: BoxDecoration(
-                    color: Colors.pink,
-                    borderRadius: BorderRadius.only(
-                        bottomRight: Radius.circular(30),
-                        bottomLeft: Radius.circular(30))),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(left: 10, right: 20),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            decoration: BoxDecoration(
+                color: Colors.pink,
+                borderRadius: BorderRadius.only(
+                    bottomRight: Radius.circular(30),
+                    bottomLeft: Radius.circular(30))),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Padding(
+                  padding: EdgeInsets.only(left: 10, right: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Row(
                         children: [
-                          Row(
-                            children: [
-                              IconButton(
-                                  onPressed: () {
-                                    Navigator.pop(context);
-                                  },
-                                  icon: Icon(
-                                    Icons.menu,
-                                    color: Colors.white,
-                                    size: MediaQuery.of(context).size.height * 0.05,
-                                  )),
-                              Container(
-                                width: MediaQuery.of(context).size.width * 0.3,
-                                height: MediaQuery.of(context).size.height * 0.05,
-                                child: TextField(
-                                  cursorColor: Colors.white,
-                                  cursorHeight:
+                          IconButton(
+                              onPressed: () {
+                                Navigator.pop(context);
+                              },
+                              icon: Icon(
+                                Icons.menu,
+                                color: Colors.white,
+                                size: MediaQuery.of(context).size.height * 0.05,
+                              )),
+                          Container(
+                            width: MediaQuery.of(context).size.width * 0.3,
+                            height: MediaQuery.of(context).size.height * 0.05,
+                            child: TextField(
+                              cursorColor: Colors.white,
+                              cursorHeight:
                                   MediaQuery.of(context).size.height * 0.035,
-                                  cursorRadius: Radius.circular(10),
-                                  decoration: InputDecoration(
-                                    // contentPadding: EdgeInsets.only(bottom: 3),
-                                    // contentPadding: EdgeInsets.fromLTRB(0, 10, 0, 0),
-                                    prefixIcon: Container(
-                                      margin: EdgeInsets.fromLTRB(0, 4, 0, 4),
-                                      child: CircleAvatar(
-                                        child: Icon(
-                                          Icons.search,
-                                          color: Colors.pink,
-                                          size: 15,
-                                        ),
-                                        radius: MediaQuery.of(context).size.height*0.01,
-                                        backgroundColor: Colors.white,
-                                        // MediaQuery.of(context).size.width * 0.005,
-                                      ),
+                              cursorRadius: Radius.circular(10),
+                              decoration: InputDecoration(
+                                // contentPadding: EdgeInsets.only(bottom: 3),
+                                // contentPadding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+                                prefixIcon: Container(
+                                  margin: EdgeInsets.fromLTRB(0, 4, 0, 4),
+                                  child: CircleAvatar(
+                                    child: Icon(
+                                      Icons.search,
+                                      color: Colors.pink,
+                                      size: 15,
                                     ),
-                                    enabledBorder: OutlineInputBorder(
-                                        borderSide: BorderSide(color: Colors.white),
-                                        borderRadius: BorderRadius.circular(20)),
-                                    fillColor: Colors.pink.shade400,
-                                    filled: true,
-                                    focusedBorder: OutlineInputBorder(
-                                      borderSide: BorderSide(color: Colors.white),
-                                      borderRadius: BorderRadius.circular(20),
-                                    ),
+                                    radius: MediaQuery.of(context).size.height *
+                                        0.01,
+                                    backgroundColor: Colors.white,
+                                    // MediaQuery.of(context).size.width * 0.005,
                                   ),
                                 ),
-                              )
-                            ],
-                          ),
-                          Wrap(
-                            direction: Axis.horizontal,
-                            crossAxisAlignment: WrapCrossAlignment.center,
-                            children: [
-                              IconButton(
-                                  onPressed: () {},
-                                  icon: Icon(
-                                    Icons.shopping_cart_outlined,
-                                    color: Colors.white,
-                                    size: MediaQuery.of(context).size.height * 0.05,
-                                  )),
-                              Container(
-                                width: MediaQuery.of(context).size.height * 0.05,
-                                height: MediaQuery.of(context).size.height * 0.05,
-                                decoration: BoxDecoration(
-                                    color: Colors.white,
-                                    borderRadius: BorderRadius.circular(7)),
-                                child: Image.asset("images/icecream/person.png",
-                                    fit: BoxFit.cover),
-                                // child: ClipRRect(child: Image.asset("images/icecream/person1.jpg",fit: BoxFit.cover,)),
-                              )
-                            ],
+                                enabledBorder: OutlineInputBorder(
+                                    borderSide: BorderSide(color: Colors.white),
+                                    borderRadius: BorderRadius.circular(20)),
+                                fillColor: Colors.pink.shade400,
+                                filled: true,
+                                focusedBorder: OutlineInputBorder(
+                                  borderSide: BorderSide(color: Colors.white),
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                              ),
+                            ),
                           )
                         ],
                       ),
-                    ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 20),
-                      child: Wrap(
-                        direction: Axis.vertical,
-                        spacing: -10,
+                      Wrap(
+                        direction: Axis.horizontal,
+                        crossAxisAlignment: WrapCrossAlignment.center,
                         children: [
-                          Text(
-                            "Hello Roee, Choose Your",
-                            style: TextStyle(
+                          IconButton(
+                              onPressed: () {},
+                              icon: Icon(
+                                Icons.shopping_cart_outlined,
                                 color: Colors.white,
-                                fontSize:
-                                MediaQuery.of(context).size.height * 0.02),
-                          ),
-                          Text(
-                            "Best Icecream",
-                            style: TextStyle(
+                                size: MediaQuery.of(context).size.height * 0.05,
+                              )),
+                          Container(
+                            width: MediaQuery.of(context).size.height * 0.05,
+                            height: MediaQuery.of(context).size.height * 0.05,
+                            decoration: BoxDecoration(
                                 color: Colors.white,
-                                fontSize: MediaQuery.of(context).size.height * 0.04,
-                                fontWeight: FontWeight.w600),
+                                borderRadius: BorderRadius.circular(7)),
+                            child: Image.asset("images/icecream/person.png",
+                                fit: BoxFit.cover),
+                            // child: ClipRRect(child: Image.asset("images/icecream/person1.jpg",fit: BoxFit.cover,)),
                           )
                         ],
-                      ),
-                    )
-                  ],
+                      )
+                    ],
+                  ),
                 ),
-              )),
+                Padding(
+                  padding: EdgeInsets.only(left: 20),
+                  child: Wrap(
+                    direction: Axis.vertical,
+                    spacing: -10,
+                    children: [
+                      Text(
+                        "Hello Roee, Choose Your",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize:
+                                MediaQuery.of(context).size.height * 0.02),
+                      ),
+                      Text(
+                        "Best Icecream",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: MediaQuery.of(context).size.height * 0.04,
+                            fontWeight: FontWeight.w600),
+                      )
+                    ],
+                  ),
+                )
+              ],
+            ),
+          )),
           Expanded(
             flex: 3,
             child: Container(
@@ -215,16 +216,16 @@ class _homeNewState extends State<homeNew> {
                               children: [
                                 Container(
                                   width:
-                                  MediaQuery.of(context).size.shortestSide *
-                                      0.18,
+                                      MediaQuery.of(context).size.shortestSide *
+                                          0.18,
                                   height:
-                                  MediaQuery.of(context).size.shortestSide *
-                                      0.09,
+                                      MediaQuery.of(context).size.shortestSide *
+                                          0.09,
                                   decoration: BoxDecoration(
                                       color:
-                                      (activatedIcon == boxes[index].name)
-                                          ? Color(0xFFfa64ac)
-                                          : Colors.pink.shade100,
+                                          (activatedIcon == boxes[index].name)
+                                              ? Color(0xFFfa64ac)
+                                              : Colors.pink.shade100,
                                       borderRadius: BorderRadius.circular(10)),
                                 ),
                                 Positioned(
@@ -236,8 +237,8 @@ class _homeNewState extends State<homeNew> {
                                         : Color(0xFFfa64ac),
                                     alignment: Alignment.center,
                                     width: MediaQuery.of(context)
-                                        .size
-                                        .shortestSide *
+                                            .size
+                                            .shortestSide *
                                         0.12,
                                   ),
                                 )
@@ -267,68 +268,68 @@ class _homeNewState extends State<homeNew> {
                                       color: Colors.pink.shade100,
                                       borderRadius: BorderRadius.circular(10)),
                                   width:
-                                  MediaQuery.of(context).size.width * 0.35,
+                                      MediaQuery.of(context).size.width * 0.35,
                                   height:
-                                  MediaQuery.of(context).size.height * 0.4,
+                                      MediaQuery.of(context).size.height * 0.4,
                                 ),
                                 Positioned(
                                   top: -20,
                                   left:
-                                  MediaQuery.of(context).size.width * 0.18,
+                                      MediaQuery.of(context).size.width * 0.18,
                                   child: CircleAvatar(
                                     child: Image.asset(items[index].img),
                                     backgroundColor: Color(0xFFfa64ac),
                                     radius: MediaQuery.of(context)
-                                        .size
-                                        .shortestSide *
+                                            .size
+                                            .shortestSide *
                                         0.15,
                                   ),
                                 ),
                                 Positioned(
                                   top:
-                                  MediaQuery.of(context).size.shortestSide *
-                                      0.18,
+                                      MediaQuery.of(context).size.shortestSide *
+                                          0.18,
                                   left:
-                                  MediaQuery.of(context).size.shortestSide *
-                                      0.1,
+                                      MediaQuery.of(context).size.shortestSide *
+                                          0.1,
                                   child: Column(
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                     children: [
                                       CircleAvatar(
                                         backgroundColor: Colors.white,
                                         radius: MediaQuery.of(context)
-                                            .size
-                                            .shortestSide *
+                                                .size
+                                                .shortestSide *
                                             0.05,
                                         child: Center(
                                           child: IconButton(
                                               onPressed: () {
                                                 setState(() {
                                                   items[index].isFavourite =
-                                                  !items[index].isFavourite;
+                                                      !items[index].isFavourite;
                                                 });
                                               },
                                               icon: (items[index].isFavourite ==
-                                                  true)
+                                                      true)
                                                   ? Icon(
-                                                Icons.favorite,
-                                                color: Colors.pink,
-                                                size: MediaQuery.of(
-                                                    context)
-                                                    .size
-                                                    .shortestSide *
-                                                    0.05,
-                                              )
+                                                      Icons.favorite,
+                                                      color: Colors.pink,
+                                                      size: MediaQuery.of(
+                                                                  context)
+                                                              .size
+                                                              .shortestSide *
+                                                          0.05,
+                                                    )
                                                   : Icon(
-                                                Icons.favorite_border,
-                                                color: Colors.pink,
-                                                size: MediaQuery.of(
-                                                    context)
-                                                    .size
-                                                    .shortestSide *
-                                                    0.05,
-                                              )),
+                                                      Icons.favorite_border,
+                                                      color: Colors.pink,
+                                                      size: MediaQuery.of(
+                                                                  context)
+                                                              .size
+                                                              .shortestSide *
+                                                          0.05,
+                                                    )),
                                         ),
                                       ),
                                       Text(
@@ -336,8 +337,8 @@ class _homeNewState extends State<homeNew> {
                                         style: TextStyle(
                                             fontWeight: FontWeight.w800,
                                             fontSize: MediaQuery.of(context)
-                                                .size
-                                                .shortestSide *
+                                                    .size
+                                                    .shortestSide *
                                                 0.04),
                                       ),
                                       Text(
@@ -345,8 +346,8 @@ class _homeNewState extends State<homeNew> {
                                         style: TextStyle(
                                             fontWeight: FontWeight.w500,
                                             fontSize: MediaQuery.of(context)
-                                                .size
-                                                .shortestSide *
+                                                    .size
+                                                    .shortestSide *
                                                 0.03),
                                       ),
                                       Text(
@@ -354,8 +355,8 @@ class _homeNewState extends State<homeNew> {
                                         style: TextStyle(
                                             fontWeight: FontWeight.w700,
                                             fontSize: MediaQuery.of(context)
-                                                .size
-                                                .shortestSide *
+                                                    .size
+                                                    .shortestSide *
                                                 0.04),
                                       )
                                     ],
