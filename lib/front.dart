@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'home.dart';
 
 class front extends StatelessWidget {
@@ -13,23 +14,27 @@ class front extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: 90,
+                height: 50,
               ),
               Text(
                 "Ice Cream",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w900,
-                    fontSize: MediaQuery.of(context).size.height * 0.05,
-                    fontFamily: "Lucida Handwriting"),
+                style: GoogleFonts.allura(
+                    textStyle: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w900,
+                      fontSize: MediaQuery.of(context).size.height*0.08,
+                    )
+                ),
               ),
               Text(
                 "Shop",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w900,
-                    fontSize: MediaQuery.of(context).size.height * 0.05,
-                    fontFamily: "Lucida Handwriting"),
+                style: GoogleFonts.allura(
+                    textStyle: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w900,
+                      fontSize: MediaQuery.of(context).size.height*0.08,
+                    )
+                ),
               ),
               SizedBox(
                 height: 50,
@@ -39,7 +44,7 @@ class front extends StatelessWidget {
                   angle: 120,
                   child: Image.asset(
                     "images/icecream/icecreamcone.png",
-                    height: MediaQuery.of(context).size.height - 330,
+                    height: MediaQuery.of(context).size.height-330,
                     width: MediaQuery.of(context).size.width,
                   ),
                 ),
@@ -54,9 +59,7 @@ class front extends StatelessWidget {
                   children: [
                     Text(
                       "Explore",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: MediaQuery.of(context).size.height * 0.03),
+                      style: TextStyle(color: Colors.white, fontSize: MediaQuery.of(context).size.height*0.03),
                     ),
                     SizedBox(
                       width: 20,
