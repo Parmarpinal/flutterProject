@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import './pistaicecream.dart';
 
 class ListItem {
@@ -121,6 +122,8 @@ class _homeState extends State<home> {
                                 BoxShadow(blurRadius: 10, color: Colors.pink)
                               ]),
                               child: Container(
+                                width: 40,
+                                height: 40,
                                 decoration: BoxDecoration(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(10)),
@@ -142,6 +145,8 @@ class _homeState extends State<home> {
                                 BoxShadow(color: Colors.pink, blurRadius: 10)
                               ]),
                               child: Container(
+                                width: 40,
+                                height: 40,
                                 decoration: BoxDecoration(
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(10)),
@@ -169,7 +174,7 @@ class _homeState extends State<home> {
                             ),
                             Wrap(
                               direction: Axis.vertical,
-                              spacing: -50,
+                              spacing: -30,
                               textDirection: TextDirection.rtl,
                               children: [
                                 Text(
@@ -181,12 +186,13 @@ class _homeState extends State<home> {
                                 ),
                                 Text(
                                   "yummm",
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 70,
-                                    fontWeight: FontWeight.w700,
-                                    fontFamily: "French Script MT",
-                                  ),
+                                  style: GoogleFonts.allura(
+                                    textStyle: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 70,
+                                      fontWeight: FontWeight.w700,
+                                    ),
+                                  )
                                 ),
                               ],
                             ),
@@ -303,7 +309,7 @@ class _homeState extends State<home> {
                   ),
                 ),
                 SizedBox(
-                  height: 20,
+                  height: 10,
                 ),
                 Expanded(
                     child: ListView.separated(
@@ -314,12 +320,6 @@ class _homeState extends State<home> {
                                   context,
                                   MaterialPageRoute(
                                     builder: (context) => pista(
-                                      // name: items[index].name,
-                                      // path: items[index].path,
-                                      // calcium: items[index].calcium,
-                                      // calory: items[index].calory,
-                                      // energy: items[index].energy,
-                                      // sugar: items[index].sugar,
                                       data: items[index],
                                     ),
                                   ));

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import './CartDemo.dart';
 
 class pista extends StatefulWidget {
@@ -85,12 +86,14 @@ class _pistaState extends State<pista> {
                 ),
                 Text(
                   "${widget.data.name}\nIce Cream",
-                  style: TextStyle(
-                    color: Color(0xFFfa64ac),
-                    fontSize: MediaQuery.of(context).size.height * 0.04,
-                    fontFamily: "Lucida Handwriting",
-                    fontWeight: FontWeight.w900,
-                  ),
+                  style: GoogleFonts.allura(
+                    textStyle: TextStyle(
+                      color: Color(0xFFfa64ac),
+                      fontSize: MediaQuery.of(context).size.height * 0.06,
+                      fontFamily: "Lucida Handwriting",
+                      fontWeight: FontWeight.w900,
+                    ),
+                  )
                 )
               ],
             ),
